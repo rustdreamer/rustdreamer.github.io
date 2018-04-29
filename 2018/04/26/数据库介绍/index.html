@@ -1,0 +1,143 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>数据库介绍 | Rust Dreamer</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/7.0.0/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">数据库介绍</h1><a id="logo" href="/.">Rust Dreamer</a><p class="description">一个 rust 的追梦者</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">数据库介绍</h1><div class="post-meta">Apr 26, 2018</div><div class="post-content"><p>常见数据库有&lt;关系数据库系统&gt;:</p>
+<p>ORACLE（甲骨文）、DB2、SQL Server、Sybase、Informix、MySQL、VF、Access等。</p>
+<p>其实数据库系统几乎支持所有的操作系统，也就是上述数据库几乎与平台无关（当然除SQL Server和Access以外，因为这是微软的东西，平台依赖性很强的）。</p>
+<p>1、IBM 的DB2</p>
+<p>DB2是IBM著名的关系型数据库产品，DB2系统在企业级的应用中十分广泛。截止2003年，全球财富500强(Fortune 500)中有415家使用DB2，全球财富100强(Fortune100)中有96家使用DB2，用户遍布各个行业。2004年IBM的DB2就获得相关专利239项，而Oracle仅为99项。DB2目前支持从PC到UNIX，从中小型机到大型机，从IBM到非IBM(HP及SUN UNIX系统等)的各种操作平台。</p>
+<p>IBM绝对是数据库行业的巨人。1968年IBM在IBM 360计算机上研制成功了IMS这个业界第一个层次型数据库管理系统，也是层次型数据库中最为著名和最为典型的。1970年，IBM E.F.Codd发表了业界第一篇关于关系数据库理论的论文“A Relational Model of Data for Large Shared DataBanks”，首次提出了关系模型的概念。1974年，IBM Don Chamberlin和Ray Boyce通过System R项目的实践，发表了论文“SEQUEL：A Structured English Query Language”，我们现在熟知SQL就是基于它发展起来的。IBM 在1983年发布了DATABASE 2(DB2)for MVS(内部代号为“Eagle”)，这就是著名的DB2数据库。2001年IBM以10亿美金收购了Informix的数据库业务，这次收购扩大了IBM分布式数据库业务。2006 DB2 9作为第三代数据库的革命性产品正式在全球发布。</p>
+<p>作为关系数据库领域的开拓者和领航人，IBM在1977年完成了System R系统的原型，1980年开始提供集成的数据库服务器—— System/38，随后是SQL/DSforVSE和VM，其初始版本与SystemR研究原型密切相关。</p>
+<p>DB2 forMVSV1 在1983年推出。该版本的目标是提供这一新方案所承诺的简单性，数据不相关性和用户生产率。1988年DB2 for MVS 提供了强大的在线事务处理(OLTP)支持，1989 年和1993 年分别以远程工作单元和分布式工作单元实现了分布式数据库支持。最近推出的DB2 Universal Database 6.1则是通用数据库的典范，是第一个具备网上功能的多媒体关系数据库管理系统，支持包括Linux在内的一系列平台。</p>
+<p>2、 Oracle</p>
+<p>Oracle 前身叫SDL，由Larry Ellison 和另两个编程人员在1977创办，他们开发了自己的拳头产品，在市场上大量销售，1979 年，Oracle公司引入了第一个商用SQL 关系数据库管理系统。Oracle公司是最早开发关系数据库的厂商之一，其产品支持最广泛的操作系统平台。目前Oracle关系数据库产品的市场占有率名列前茅。</p>
+<p>Oracle公司是目前全球最大的数据库软件公司，也是近年业务增长极为迅速的软件提供与服务商。IDC(Internet Data Center)2007统计数据显示数据库市场总量份额如下：Oracle 44.1% IBM 21.3%Microsoft 18.3% Teradata 3.4% Sybase 3.4%。不过从使用情况看，BZ Research的2007年度数据库与数据存取的综合研究报告表明76.4%的公司使用了Microsoft SQL Server，不过在高端领域仍然以Oracle，IBM，Teradata为主。</p>
+<p>2007年7月12日，甲骨文公司在美国纽约宣布推出数据库Oracle 11g，这是Oracle数据库的最新版本。Oracle介绍说，Oracle 11g有400多项功能，经过了1500万个小时的测试，开发工作量达到了3.6万人/月。Oracle 11g在安全，XML DB，备份等方面得到了很大提升。Oracle发展历史见转载《书写历史的甲骨文–ORACLE公司传奇》一文。</p>
+<p>3、 Informix</p>
+<p>Informix是IBM公司出品(2001)的关系数据库管理系统(RDBMS)家族。作为一个集成解决方案，它被定位为作为IBM在线事务处理(OLTP)旗舰级数据服务系统。Informix在1980年成立，目的是为Unix等开放操作系统提供专业的关系型数据库产品。公司的名称Informix便是取自Information 和Unix的结合。Informix第一个真正支持SQL语言的关系数据库产品是Informix SE(StandardEngine)。InformixSE是在当时的微机Unix环境下主要的数据库产品。它也是第一个被移植到Linux上的商业数据库产品。</p>
+<p>4、Sybase</p>
+<p>美国Sybase公司研制的一种关系型数据库系统，是一种典型的UNIX或WindowsNT平台上客户机/服务器环境下的大型数据库系统。Sybase SQL Server 是 Sybase 公司产品。Sybase公司成立于1984年11月，产品研究和开发包括企业级数据库、数据复制和数据访问。</p>
+<p>Sybase公司成立于1984年，公司名称“Sybase”取自“system”和“database” 相结合的含义。Sybase公司的创始人之一Bob Epstein 是Ingres 大学版(与System/R同时期的关系数据库模型产品)的主要设计人员。公司的第一个关系数据库产品是1987年5月推出的Sybase SQLServer1.0。Sybase首先提出Client/Server 数据库体系结构的思想，并率先在Sybase SQLServer 中实现。</p>
+<p>起初，为了在企业级数据库市场上与Oralce和IBM竞争，Sybase与Microsoft合作共同开发数据库产品。1988年，Sybase、Microsoft和Asbton-Tate联合开发了OS/2系统上的SQL Server 1.0，本质上和Sybase SQL Server 3.0是一样的。而后Microsoft致力于将SQL Server移值到Win NT平台上。Sybase与Microsoft的合作关系一直坚持到SQL Server 4.21(1993)，随后各自开发相应平台的数据库系统。1995年，Sybase发布了SQL Server 11.0。为了区别于Microsoft SQL Server， Sybase将其11.5以及以上版本的SQL Server改名为Adaptive Server Enterprise (ASE)。2005年9月，Sybase强势发布Adaptive Server Enterprise 15。Sybase SQL Server与Microsoft SQL Server都使用T-SQL(Transact-SQL 由SQL扩展而来)做为数据库语言。</p>
+<p>Sybase提供了一套应用程序编程接口和库，可以与非Sybase数据源及服务器集成，允许在多个数据库之间复制数据，适于创建多层应用。系统具有完备的触发器、存储过程、规则以及完整性定义，支持优化查询，具有较好的数据安全性。Sybase通常与SybaseSQLAnywhere用于客户机/服务器环境，前者作为服务器数据库，后者为客户机数据库，采用该公司研制的PowerBuilder为开发工具，在我国大中型系统中具有广泛的应用。</p>
+<p>5、 SQL Server</p>
+<p>Microsoft SQL Server是微软公司开发的大型关系型数据库系统。SQL Server的功能比较全面，效率高，可以作为中型企业或单位的数据库平台。SQL Server可以与Windows操作系统紧密集成，不论是应用程序开发速度还是系统事务处理运行速度，都能得到较大的提升。对于在Windows平台上开发的各种企业级信息管理系统来说，不论是C/S(客户机/服务器)架构还是B/S(浏览器/服务器)架构，SQL Server都是一个很好的选择。SQL Server的缺点是只能在Windows系统下运行。</p>
+<p>1987 年，微软和IBM合作开发完成OS/2，IBM 在其销售的OS/2 ExtendedEdition 系统中绑定了OS/2Database Manager，而微软产品线中尚缺少数据库产品。为此，微软将目光投向Sybase，同Sybase 签订了合作协议，使用Sybase的技术开发基于OS/2平台的关系型数据库。1989年，微软发布了SQL Server 1.0 版。 Microsoft在与Sybase分道扬镳后，随后在其6.05和7.0版本中重写了核心数据库系统，如今SQLServer 2008即将到来。</p>
+<p>6、 PostgreSQL</p>
+<p>PostgreSQL是以加州大学伯克利分校计算机系开发的 POSTGRES，版本 4.2为基础的对象关系型数据库管理系统(ORDBMS)。 POSTGRES 领先的许多概念只是在非常迟的时候才出现在商业数据库中。</p>
+<p>PostgreSQL 是一种特性非常齐全的自由软件的对象——关系性数据库管理系统(ORDBMS)，它的很多特性是当今许多商业数据库的前身。PostgreSQL最早开始于BSD的Ingres项目。PostgreSQL 的特性覆盖了SQL-2/SQL-92和SQL-3。首先，它包括了可以说是目前世界上最丰富的数据类型的支持;其次，目前PostgreSQL 是唯一支持事务、子查询、多版本并行控制系统、数据完整性检查等特性的唯一的一种自由软件的数据库管理系统.</p>
+<p>7、mySQL</p>
+<p>mySQL是一个小型关系型数据库管理系统，开发者为瑞典MySQL AB公司。在2008年1月16号被Sun公司收购。目前MySQL被广泛地应用在Internet上的中小型网站中。由于其体积小、速度快、总体拥有成本低，尤其是开放源码这一特点，许多中小型网站为了降低网站总体拥有成本而选择了MySQL作为网站数据库。MySQL的官方网站的网址是： <a href="http://www.mysql.com" target="_blank" rel="noopener">www.mysql.com</a></p>
+<p>8、Access数据库</p>
+<p>美国Microsoft公司于1994年推出的微机数据库管理系统。它具有界面友好、易学易用、开发简单、接口灵活等特点，是典型的新一代桌面关系型数据库管理系统。它结合了 Microsoft Jet Database Engine 和 图形用户界面两项特点，是 Microsoft Office的成员之一。Access能够存取 Access/Jet、Microsoft SQL Server、Oracle，或者任何 ODBC 兼容数据库的资料。Access界面友好而且易学易用，作为Office套件的一部分，可以与Office集成，实现无缝连接Access提供了表(Table)、查询(Query)、窗体(Form)、报表(Report)、宏(Macro)、模块(Module)等用来建立数据库系统的对象。提供了多种向导、生成器、模板，把数据存储、数据查询、界面设计、报表生成等操作规范化。</p>
+<p>Access是入门级小型桌面数据库，性能安全性都很一般。可供个人管理或小型网站之用。Access不是数据库语言，只是一个数据库程序。目前最新版本为Office 2007。其主要特点如下：</p>
+<p>(1)完善地管理各种数据库对象，具有强大的数据组织、用户管理、安全检查等功能。</p>
+<p>(2)强大的数据处理功能，在一个工作组级别的网络环境中，使用Access开发的多用户数据库管理系统具有传统的XBASE(DBASE、FoxBASE的统称)数据库系统所无法实现的客户服务器(Cient/Server)结构和相应的数据库安全机制，Access具备了许多先进的大型数据库管理系统所具备的特征，如事务处理/出错回滚能力等。</p>
+<p>(3)可以方便地生成各种数据对象，利用存储的数据建立窗体和报表，可视性好。</p>
+<p>(4)作为Office套件的一部分，可以与Office集成，实现无缝连接。</p>
+<p>(5)能够利用Web检索和发布数据，实现与Internet的连接。 Access主要适用于中小型应用系统，或作为客户机/服务器系统中的客户端数据库。</p>
+<p>9、FoxPro数据库</p>
+<p>最初由美国Fox公司1988年推出，1992年Fox公司被Microsoft公司收购后，相继推出了FoxPro2.5、2.6和VisualFoxPro等版本，其功能和性能有了较大的提高。 FoxPro2.5、2.6分为DOS和Windows两种版本，分别运行于DOS和Windows环境下。FoxPro比FoxBASE在功能和性能上又有了很大的改进，主要是引入了窗口、按纽、列表框和文本框等控件，进一步提高了系统的开发能力。</p>
+<p>Visual FoxPro由FoxPro延伸而来，原名FoxBase，是美国Fox Software公司在1984推出的数据库产品。FoxPro在DOS上运行，与xBase系列相兼容。FoxPro是FoxBase的加强版，1992年Fox Software被微软收购。可以说，Visual FoxPro是在dBASE和FoxBase系统的基础上发展而成的。80年代初期，dBASE是PC机上最流行的数据库管理系统，当时大多数的管理信息系统采用了dBASE作为系统开发平台。后来出现的FoxBase几乎完全支持了dBASE的所有功能。</p>
+<p>Visual FoxPro出现是xBASE系列数据库系统的一个飞跃，其不仅在图形用户界面的设计方面采用了一些新的技术，还提供了所见即所得的报表和屏幕格式设计工具。2002年，随着微软.NET口号的提出，发布了Visual Studio .NET。在这个版本的 Visual Studio中，微软将Visual FoxPro作为一个单独的开发环境(Visual FoxPro 7.0)单独销售，不再与Studio</p>
+<p>集成。2007年3月，微软公司宣布Visual FoxPro 9将是微软的最后一款桌面数据库开发工具软件，今后将永远不会出现VFP 10。微软将会为VFP 9的普通用户提供支持到2010年1月12日，购买扩展支持服务的用户将可获得到2015年1月13号的服务。Visual FoxPro只能在Windows系统下运行。</p>
+<p>10、Teradata</p>
+<p>Teradata数据库是世界上最富盛名、功能最强大的数据仓库管理系统，是Teradata公司产品， 1991年被NCR收购。客户主要集中在电信，航空，物流，零售，银行等方面。Teradata在全球数据仓库领域处于领先地位。2007年，Teradata宣布推出Teradata 12解决方案，包括Teradata数据库12 (Teradata Database 12)、Teradata工具及实用程序12 (Teradata Tools and Utilities 12)，以及通过应用集成和合作伙伴关系提供的专业和咨询服务。该方案是Teradata第十二次重大数据库产品改版。</p>
+<p>TPC介绍</p>
+<p>Transaction Processing Performance Council,事务处理性能委员会，是由数10家会员公司创建的非盈利组织，总部设在美国。该组织对全世界开放，但迄今为止，绝大多数会员都是美、日、西欧的大公司。TPC的成员主要是计算机软硬件厂家，而非计算机用户，它的功能是制定商务应用基准程序(Benchmark)的标准规范、性能和价格度量，并管理测试结果的发布。</p>
+<p>TPC不给出基准程序的代码，而只给出基准程序的标准规范(Standard Specification)。任何厂家或其它测试者都可以根据规范，最优地构造出自己的系统(测试平台和测试程序)。为保证测试结果的客观性，被测试者(通常是厂家)必须提交给TPC一套完整的报告(Full Disclosure Report)，包括被测系统的详细配置、分类价格和包含五年维护费用在内的总价格。该报告必须由TPC授权的审核员核实(TPC本身并不做审计)，现在全球只有几个审核员，全部在美国。</p>
+<p>TPC已经推出了四套基准程序，被称为TPC-A、TPC-B、TPC-C和TPC-D。其中A和B已经过时，不再使用了。TPC-C是在线事务处理(OLTP)的基准程序，TPC-D是决策支持(Decision Support) 的基准程序。TPC即将推TPC-E，作为大型企业(Enterprise)信息服务的基准程序。</p>
+<p>几款主流数据库详细比较</p>
+<p>开发数据库应用，选择一个好的数据库是非常重要的。目前，商品化的数据库管理系统以关系型数据库为主导产品，技术比较成熟。面向对象的数据库管理系统虽然技术先进，数据库易于开发、维护，但尚未有成熟的产品。国际国内的主导关系型数据库管理系统有SQL Server、ORACLE、SYBASE、INFORMIX和 DB2。本文从一些方面比较了SQL Server与Oracle、SYBASE、DB2、INFORMIX这些数据库，为您选择数据库提供一些参考。</p>
+<p>1、性能</p>
+<p>SQL Server</p>
+<p>老版本多用户时性能不佳，新版本的性能有了明显的改善，各项处理能力都有了明显的提高。保持了多项TPC-C纪录。具体参见<a href="http://www.tpc.org/" target="_blank" rel="noopener">http://www.tpc.org/</a></p>
+<p>Oracle</p>
+<p>性能最高，保持Windows NT下的TPC-D和TPC-C的世界记录。</p>
+<p>SYBASE</p>
+<p>性能较高，支持Sun、IBM、HP、Compaq和Veritas的集群设备的特性，实现高可用性。性能接近于SQL Server，但在UNIX平台下的并发性要优与 SQL Server。适应于安全性要求极高的系统。</p>
+<p>DB2</p>
+<p>适用于数据仓库和在线事物处理，性能较高。客户端支持及应用模式。</p>
+<p>INFORMIX</p>
+<p>性能较高，支持集群，实现高可用性。适应于安全性要求极高的系统，尤其是银行， 证券系统的应用。</p>
+<p>2、可伸缩性,并行性</p>
+<p>SQL Server</p>
+<p>以前版本SQL Server并行实施和共存模型并不成熟。很难处理大量的用户数和数据卷。伸缩性有限。新版本性能有了较大的改善，在Microsoft Advanced Servers上有突出的表现，超过了他的主要竞争对手。</p>
+<p>Oracle</p>
+<p>并行服务器通过使一组结点共享同一簇中的工作来扩展Window NT的能力,提供高可用性和高伸缩性的簇的解决方案。如果Windows NT不能满足需要, 用户可以把数据库移到UNIX中，具有很好的伸缩性。Oracle的并行服务器对各种UNIX平台的集群机制都有着相当高的集成度。</p>
+<p>SYBASE</p>
+<p>新版本具有较好的并行性，速度快，对巨量数据无明显影响，但是技术实现复杂，需要程序支持，伸缩性有限。虽然有DB SWITCH来支持其并行服务器，但DB SWITCH在技术层面还未成熟，且只支持版本12.5以上的ASE SERVER。DB SWITCH技术需要一台服务器充当SWITCH，从而在硬件上带来一些麻烦。</p>
+<p>DB2</p>
+<p>DB2具有很好的并行性。DB2把数据库管理扩充到了并行的、多节点的环境。数据库分区是数据库的一部分，包含自己的数据、索引、配置文件、和事务日志。数据库分区有时被称为节点或数据库节点，伸缩性有限。</p>
+<p>INFORMIX</p>
+<p>采用单进程多线程的技术，具有较好的并行性。但是仅运行于UNIX平台，伸缩性有限。</p>
+<p>3、安全性</p>
+<p>SQL server</p>
+<p>Microsoft Advanced Server 获得最高安全认证，服务器平台的稳定性是数据库的稳定性的基础，新版本的SQL的安全性有了极大的提高。</p>
+<p>Oracle Server</p>
+<p>获得最高认证级别的ISO标准认证。</p>
+<p>SYBASE</p>
+<p>通过Sun公司J2EE认证测试，获得最高认证级别的ISO标准认证。</p>
+<p>DB2</p>
+<p>获得最高认证级别的ISO标准认证。</p>
+<p>INFORMIX</p>
+<p>获得最高认证级别的ISO标准认证。</p>
+<p>4、操作</p>
+<p>SQL Server</p>
+<p>操作简单,采用图形界面。管理也很方便，而且编程接口特别友好(它的SQL-DMO让编程变得非常方便!) ，从易维护性和价格上SQL Server明显占有优势。</p>
+<p>Oracle</p>
+<p>较复杂, 同时提供GUI和命令行，在Windows NT和Unix， Linux 下操作相同。对数据库管理人员要求较高。</p>
+<p>SYBASE</p>
+<p>复杂，使用命令行操作，对数据库管理人员要求较高。同时提供GUI和命令行。但GUI较差，常常无法及时状态，建议使用命令行。</p>
+<p>DB2</p>
+<p>操作简单,同时提供GUI和命令行，在Windows NT和Unix下操作相同。</p>
+<p>INFORMIX</p>
+<p>使用和管理复杂，命令行操作。对数据库管理人员要求较高。</p>
+<p>5、使用风险</p>
+<p>SQL Server</p>
+<p>完全重写的代码，性能和兼容性有了较大的提高，与Oracle，DB2的性能差距明显减小。该产品的出台经历了长期的测试，为产品的安全和稳定进行了全面的检测，安全稳定性有了明显的提高。经历了长期的测试，不断延迟，许多功能需要时间来证明，并不十分兼容。</p>
+<p>Oracle</p>
+<p>长时间的开发经验，完全向下兼容，得到广泛的应用，完全没有风险。可以安全的进行数据库的升级，在企业、政府中得到广泛的应用。并且如果在WINNT上无法满足数据的要求，可以安全的把数据转移到UNIX上来。</p>
+<p>SYBASE</p>
+<p>向下兼容, 但是ct-library 程序不益移植。开发时间较长，升级较复杂，稳定性较好，数据安全有保障。风险小。在安全要求极高的银行， 证券行业中得到了广泛的应用。</p>
+<p>DB2</p>
+<p>在巨型企业得到广泛的应用，向下兼容性好。风险小。</p>
+<p>INFORMIX</p>
+<p>开发时间较长，升级较复杂，稳定性较好，数据安全有保障。风险小。在安全要求极高的银行，证券行业中得到了广泛的应用。</p>
+<p>6、开放性</p>
+<p>SQL Server</p>
+<p>只能在Windows 上运行，C/S结构，没有丝毫的开放性，操作系统的系统的稳定对数据库是十分重要的。只支持Windows客户，可以用ADO,DAO,OLEDB,ODBC连接。Windows9X系列产品是偏重于桌面应用，NT server适合各种大中小型型企业。操作系统的系统的稳定对数据库是十分重要的。Windows平台的可靠性，安全性经过了最高级别的C2认证的。在处理大数据量的关键业务时提供了较好的性能。而且windows平台的可靠性，安全性和伸缩性是非常有限的。它不象unix那样久经考验，尤其是在处理大数据库。</p>
+<p>Oracle</p>
+<p>能在所有主流平台上运行(包括 Windows)。完全支持所有的工业标准。采用完全开放策略。多层次网络计算，支持多种工业标准，可以用ODBC,JDBC,OCI等网络客户连接。可以使客户选择最适合的解决方案。对开发商全力支持。</p>
+<p>SYBASE</p>
+<p>能在所有主流平台上运行，C/S结构，可以用ODBC、Jconnect、Ct-library等网络客户连接。在银行业中得到了广泛的应用。但由于早期Sybase与OS集成度不高，因此VERSION11.9.2以下版本需要较多OS和DB级补丁。在多平台的混合环境中，会有一定问题。</p>
+<p>DB2</p>
+<p>能在所有主流平台上运行(包括windows)。有较好的开放性，最适于海量数据。跨平台，多层结构，支持ODBC,JDBC等客户。在大型的国际企业中得到最为广泛的应用,在全球的500家最大的企业中,几乎85%以上采用DB2数据库服务器，而国内到97年约占5%。</p>
+<p>IINFORMIX</p>
+<p>仅运行在UNIX平台，包括SUNOS、HPUX、 ALFAOSF/1。在银行中得到广泛的应用。</p>
+<p>7、易维护性和价格</p>
+<p>SQL Server</p>
+<p>从易维护性和价格上SQL Server明显占有优势。基于Microsoft的一贯风格，SQL Server的图形管理界面带来了明显的易用性，微软的数据库管理员培训进行的比较充分，可以轻松的找到很好的数据库管理员，数据库管理费用比较低，SQL Server的价格也是很低的，但是在License的购买上会抬高价格。总体来说SQL Server的价格在商用数据库中是最低的。</p>
+<p>Oracle</p>
+<p>从易维护性和价格体来说Oracle的价格是比较高的，管理比较复杂，由于Oracle的应用很广泛，经验丰富的Oracle数据库管理员可以比较容易的找到，从而实现Oracle的良好管理。因此Oracle的性能价格比在商用数据库中是最好的。</p>
+<p>SYBASE</p>
+<p>SYBASE的价格是比较低的，但是SYBASE的在企业和政府中的应用较少，很难找到经验丰富的管理员，运行管理费用较高。</p>
+<p>DB2</p>
+<p>价格高， 管理员少，在中国的应用较少，运行管理费用都很高，适用于大型企业的数据仓库应用。</p>
+<p>INFORMIX</p>
+<p>价格在这些系统中居于中间，与SYBASE一样，在企业和政府中应用较少，仅在银行中得到了广泛的应用。经验丰富的管理人员较少，运行管理费用高。</p>
+<p>8、数据库二次开发</p>
+<p>SQL Server</p>
+<p>数据库的二次开发工具很多，包括Visual C++, Visual Basic等开发工具，可以实现很好的Windows应用。开发容易。</p>
+<p>Oracle</p>
+<p>数据库的二次开发工具很多，涵盖了数据库开发的各个阶段，开发容易。</p>
+<p>SYBASE</p>
+<p>开发工具较少，经验丰富的人员很少。</p>
+<p>DB2</p>
+<p>在国外巨型企业得到广泛的应用，中国的经验丰富的人员很少。</p>
+<p>INFORMIX</p>
+<p>在银行业中得到广泛的应用，但是在中国的经验丰富的人员很少。</p>
+<p>经过以上比较，我们得出结论如下：一般的中小型企业或者中小型的应用中，采用MS SQL Server 作为数据平台，既可以节约资金，又便于维护管理。小型应用主要考虑的是资金问题，SQL Server的资金投入最小，是中小型应用的最佳选择。大型应用系统要求有较高的数据处理能力，一般应该采用了高性能的大型数据库管理系统——Oracle，大型高可靠性要求的系统安全稳定性是首要考虑的因素，Oracle 能够提供很高的安全稳定的性能，因此Oracle是在国内的大型数据库的必然的选择。在国外的巨型企业中很多采用全套IBM解决方案，使用DB2作为公司的数据仓库，可以达到几乎与Oracle相同的安全稳定性和相近的性能，但是国内使用DB2的人很少，经验丰富的管理员更少，很难实现很好的数据库管理。在银行和证券系统中，采用安全性较好的INFORMIX和SYBASE。随着SQL2000的发布和完善，在大型数据库应用中Microsoft也将占一席之地。</p>
+<p>对于流动人口管理系统来说，由于区县的每个人都要有一条记录，一个市或县的人口数量一般达到10万，有些大县甚至达到100万级，每一个人的记录包括出生年月，户口所在地，姓名，性别……，如果育龄妇女占1/3，则大约有30万条数据，因此系统数据量不是很大，属于中小型应用在此，我们建议采用Microsoft SQL Server数据库作为后台的数据库。这主要是考虑系统的性能价格比，和易于管理性，易维护性。</p>
+<p>如前所述，Microsoft SQL Server是基于Windows 2000 Advanced Server服务器的，我们通过TPC的网站可以看到Microsoft SQL Server的性能已经稳居数据库应用的前几位，可以满足系统的稳定性和大数据量的要求。对于小县/区来说，系统的数据容量较小，采用WINNT平台安装数据库也可以较好的满足要求。当人口增加，数据量变大的时候，Microsoft SQL Server也可以很好的满足数据管理的要求</p>
+<p>数据库的稳定是建立在操作系统稳定的基础上。Windows 2000 Advanced Server经过了最严格的安全认证，获得了最高的C2级别的安全认证标准。由此可以证明Windows 2000 Advanced Server的系统稳定性是极高的，他的代码经过检验，证明是稳定的。Microsoft SQL Server的性能我们已经在TPC网站上看到了，某些大型电信级的数据库也以Microsoft SQL Server作为数据支持。</p>
+<p>数据库良好稳定的运行需要管理员的辛勤工作，管理员的经验直接关系到数据库的安全稳定，MS SQL SERVER在中国的企业和政府得到了广泛的应用，有大量经验丰富的管理员。MS SQL SERVER 数据库的管理和操作是最简单的，整个系统的安全性和稳定性也较好，而且性能价格比最高，完全满足人口管理的稳定安全的要求，同时节约资金，降低成本，是我们理想的选择。</p>
+<p>因此，基于对人口管理系统的性能最优，安全稳定性和易于管理的综合要求，我们建议选择Microsoft SQL SERVER数据库作为后台数据服务基础。</p>
+</div><div class="tags"></div><div class="post-nav"><a class="pre" href="/2018/04/26/常用数据库介绍/">常用数据库介绍</a><a class="next" href="/2018/04/24/部署的演变之路/">部署的演变之路</a></div></div></div></div><div class="pure-u-1 pure-u-md-1-4"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.baidu.com/baidu" method="get" accept-charset="utf-8" target="_blank"><input type="search" name="word" maxlength="20" placeholder="Search"/><input type="hidden" name="si" value="http://yoursite.com"/><input name="tn" type="hidden" value="bds"/><input name="cl" type="hidden" value="3"/><input name="ct" type="hidden" value="2097152"/><input name="s" type="hidden" value="on"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/rust-算法基础/">rust 算法基础</a><span class="category-list-count">1</span></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/rust/" style="font-size: 15px;">rust</a> <a href="/tags/算法/" style="font-size: 15px;">算法</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/04/29/集成-react-native-code-push/">集成 react-native-code-push</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/26/常用数据库介绍/">常用数据库介绍</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/26/数据库介绍/">数据库介绍</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/24/部署的演变之路/">部署的演变之路</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/13/安卓权限/">安卓权限</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/16/目前发展方向/">目前发展方向</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/07/rust-算法基础/">rust 基本排序算法</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/06/js-中直接调用-rust/">js 中直接调用 rust</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/06/通过用户名解决-git-多用户问题/">通过用户名解决 git 多用户问题</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/05/mac-无法连接-ssh-解决方案/">mac 无法连接 ssh 解决方案</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="http://www.example1.com/" title="site-name1" target="_blank">site-name1</a><ul></ul><a href="http://www.example2.com/" title="site-name2" target="_blank">site-name2</a><ul></ul><a href="http://www.example3.com/" title="site-name3" target="_blank">site-name3</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2018 <a href="/." rel="nofollow">Rust Dreamer.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.bootcss.com/fancybox/3.2.5/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/fancybox/3.2.5/jquery.fancybox.min.css"><script type="text/javascript" color="0,0,0" opacity="0.5" zIndex="-2" count="50" src="//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
